@@ -1,0 +1,54 @@
+/* Add this to your styles.css file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.advertisements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advertisement {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.advertisement img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.advertisement img:hover {
+    transform: scale(1.05);
+}
+
+.advertisement p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Optional responsive styles */
+@media screen and (max-width: 768px) {
+    .advertisement {
+        width: calc(50% - 20px);
+    }
+}
